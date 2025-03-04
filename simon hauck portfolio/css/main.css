@@ -19,7 +19,7 @@ nav a h2:hover {
   background-color: none;
 }
 
-nav a:hover {
+.nav-item:hover {
   color: #3f5c62;
   background-color: #ffd040;
   border-radius: 3rem;
