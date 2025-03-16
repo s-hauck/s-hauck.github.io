@@ -18,13 +18,13 @@
 
   <body>
     <header class="portfolio-header">
-      <div class="highlight">
+      <div class="highlight1">
         <a href="index.html"> <h1>simon hauck</h1></a>
       </div>
       <div class="inventory-bucket">
         <div class="inventory">
-          <h3>work:</h3>
-          <h3>Spotify</h3>
+          <h6>Sage Advice</h6>
+          <h6>Spotify</h6>
         </div>
       </div>
       <!-- <ul class="navigation">
@@ -34,63 +34,310 @@
       </ul> -->
     </header>
 
+    <!-- <figure>
+      <img src="img/banner.png" alt="" />
+    </figure> -->
+
     <main class="main-content-wrapper">
       <div class="main-content">
         <div class="section-title">
-          <h3>Simon is a UX designer and artist, based in Vancouver</h3>
+          <div class="highlight"><h3>Sage Advice</h3></div>
+        </div>
+        <div class="sub-hero">
+          <h4>Coming soon</h4>
+        </div>
+        <div class="section-title">
+          <div class="highlight"><h3>Spotiy</h3></div>
+        </div>
+        <div class="sub-hero">
+          <div class="center">
+            <img src="img/spotifylogo.png" height="80" />
+          </div>
+          <h4>Problem</h4>
+          <p>
+            Spotify gives users exactly what they want... almost to a fault. The
+            current algorithm primarily focuses on recommending music to users
+            that they already know and like, rather than introducing them to new
+            and exciting music. Spotify algorithms also ignore genres that users
+            enjoy but don’t often explore, this prevents users from discovering
+            fresh tracks from their broader taste. In interviews, users
+            expressed dissatisfaction with Spotify's recommendations, while they
+            appreciate the how the Spotify algorithm curates content in a way
+            which maintains a certain vibe, users voiced a desire for more
+            variety beyond their usual preferences.
+          </p>
+          <h4>Key Assumptions</h4>
+
+          <p>
+            1. Users want to store their favorite artists in one place while
+            discovering new music based on their tastes.
+          </p>
+          <p>
+            2. The current algorithm limits users, preventing them from stepping
+            outside their usual music bubble.
+          </p>
+
+          <h4>Outcome</h4>
+
+          <p>
+            One of the key design suggestions which I recommend is the
+            introduction of a “Manage Algorithm” setting. This feature would
+            allow users to customize their scope of recommendations which
+            Spotify provides, giving users more control over their listening
+            experience. The goal is to offer users the ability to adjust the
+            algorithm’s reach, allowing users to explore music from genres they
+            like but may not actively seek out, and beyond.
+          </p>
+          <div class="center">
+            <img src="img/spotify1.png" height="450" />
+          </div>
+
+          <h4>Interviews Conducted</h4>
+
+          <p>Three Spotify users were interviewed.</p>
+
+          <h4>User Pain Points</h4>
+
+          <p>
+            A common frustration voiced by users was that the algorithm has a
+            tendency to recycle songs or deliver unsatisfactory recommendations.
+            Many disliked the changes to how songs are added to the "Liked
+            Songs" playlist, feeling it adds unnecessary steps. One interviewee
+            voiced strong disapproval of Spotify's pre-curated playlists, which
+            often they found duplicates their current favourite songs instead of
+            introducing new music. Because of this, users opt to listen to
+            user-generated playlists instead.
+          </p>
+
+          <h4>Engagement</h4>
+          <p>
+            Features like Spotify Wrapped and other engagement tools were viewed
+            positively, enhancing the overall user experience. Interviewees
+            expressed a desire for more human input in music recommendations,
+            favoring personal curation, like playlists from friends, over
+            algorithmic suggestions.
+          </p>
+
+          <h4>New Music vs. Variety</h4>
+          <p>
+            The algorithm tends to prioritize new music within the user’s
+            current tastes, rather than offering diverse recommendations based
+            on their past listening.
+          </p>
+
+          <p>
+            Users feel they aren't being introduced to truly new music, even
+            though the suggestions align with their preferences. There is also a
+            desire for variety across genres, not just new tracks within a
+            specific genre. While some users appreciate personalized playlists
+            like the Daily Mix or Discover Weekly, others reject them entirely.
+          </p>
+
+          <p>
+            Most users find algorithms useful for discovering new music, though
+            success rates vary, and many prefer to discover music outside the
+            platform, such as in social settings or through friends.
+          </p>
+          <p>
+            Smart Shuffle is a microcosm for how Spotify recommends music. As a
+            brief experiment, interviewees were asked to choose a random
+            playlist that they had created, then press play with smart shuffle
+            enabled. Interviewees were then asked to consider the first 11 songs
+            added by smart shuffle.
+          </p>
+          <p>How many unique artists are there?</p>
+          <p>How many of the artists do you know?</p>
+          <p>Of the 11 added songs, how many do you know?</p>
+          <h4>This was the results from this test:</h4>
+          <div class="list">
+            <ul>
+              <h4>Interviewee 1</h4>
+              <li>11 songs made by 5 artists.</li>
+              <li>They knew 8 of 11 songs.</li>
+              <li>They knew 4 of 5 artists. </li>
+            </ul>
+            <ul>
+              <h4>Interviewee 2</h4>
+              <li>11 songs made by 6 artists.</li>
+              <li>They knew 6 of 11 songs.</li>
+              <li>They knew 6 of 6 artists. </li>
+            </ul>
+            <ul>
+              <h4>Interviewee 3</h4>
+              <li>11 songs made by 9 artists.</li>
+              <li>They knew 8 of 11 songs.</li>
+              <li>hey knew 6 of 9 artists.</li>
+            </ul>
+          </div>
+
+          <h4>Problem</h4>
+          <p>
+            Spotify’s recommendations seem to fall between two primary
+            parameters: relevance (vibe, genre, artist) and familiarity. All
+            interviewees have different music habits, but they are recommended
+            music that is mostly familiar, at similar rates. This means that
+            Spotify tends to emphasize music users already know, recommending
+            less entirely “new” or “different” music. While this isn't
+            inherently bad, as users may prefer the comfort of familiar music,
+            it creates a potential issue: the algorithm may trap users in a
+            feedback loop. They may not even realize they’re stuck or know how
+            to break free and discover fresh, exciting music.
+          </p>
+          <h4>New Assumption</h4>
+          <p>
+            Because Spotify effectively delivers music users like, many users
+            are less inclined to actively search for new music. Instead, they
+            rely on the platform’s recommendations, which reinforces the
+            feedback loop and keeps them within their musical ecosystem.
+          </p>
+
+          <h4>Design Solution</h4>
+          <p>
+            The “Manage Algorithm” setting would work with three parameters:
+            Newness, Variety, and Proximity. (These labels should be user-tested
+            to ensure they are clear and intuitive.)
+          </p>
+          <p>
+            Manage Algorithm Design Statement Enhance Spotify's music discovery
+            features by addressing frustrations with the algorithm's narrow
+            focus. Improve the balance between personalized recommendations and
+            exposure to new, diverse music. This can be achieved by refining
+            Spotify’s algorithms, adjusting features, and promoting more
+            community-driven content, ultimately improving user satisfaction.
+          </p>
+          <h4>Design Principles and Recommendations</h4>
+          <p>
+            Encourage Discovery: Offer more variety in recommendations. One of
+            the best feelings when discovering new music is thinking, "I never
+            thought I’d like this," which stems from novelty. The algorithm
+            should strive to provide this type of experience.
+          </p>
+
+          <h4>Manage Algorithm Setting</h4>
+          <p>
+            Develop a new setting that allows users to customize the scope of
+            their recommendations, enabling users to tailor their music feed to
+            suit their preferences. The "Manage Algorithm" setting should align
+            with the rest of Spotify’s settings, keeping the interface simple
+            and intuitive. Given the concept's complexity, the design must be
+            easy for users to understand and use. A visualizer will be essential
+            to provide immediate feedback beyond just percentages. I propose a
+            pill-shaped interface with three components: two orbs (green and
+            purple) and an outline.
+          </p>
+          <h4>1. Green (Newness):</h4>
+          <p>
+            This controls how much new music a listener will hear. It adjusts
+            the percentage of new songs versus familiar ones, particularly in
+            situations like radio play or smart shuffle. The more users
+            increases "newness," the more unfamiliar (new) music users will hear
+            within their chosen vibe.
+          </p>
+          <h4>2. Purple (Variety):</h4>
+          <p>
+            This controls the variety of music a listener will hear. Spotify's
+            current algorithm tends to restrict recommendations to genres that
+            fit the user’s taste profile, leaving out genres they may also
+            enjoy. The Variety parameter would allow users to expand (or narrow)
+            their musical diet by adding or subtracting genres.
+          </p>
+
+          <h4>3. Outline (Proximity):</h4>
+          <p>
+            This parameter controls how close the recommendations stay to a
+            user’s taste profile. Think of it as casting a net, but with
+            adjustable size. The Proximity setting determines how far the
+            algorithm will reach into different musical territories to provide
+            suggestions, allowing users to explore music outside their usual
+            preferences.
+          </p>
+
+          <h4>Wrap it up</h4>
+          <p>
+            By integrating these three components, the “Manage Algorithm”
+            feature empowers users to take control of their music discovery
+            experience and break free from repetitive and restricting
+            recommendations.
+          </p>
+
+          <p>
+            It is fully within my knowledge that Spotify would never do this...
+            but a feature such as this would be a first of its kind and would
+            result in a content experience like no other.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="main-content-wrapper1">
+      <div class="main-content">
+        <div class="section-title">
+          <div class="highlight"><h3>Sage Advice</h3></div>
+        </div>
+        <div class="sub-hero">
+          <h4>Coming soon</h4>
+        </div>
+        <div class="section-title">
+          <div class="highlight"><h3>Spotiy</h3></div>
         </div>
         <div class="sub-hero">
           <p>
-            Problem: Spotify often gives users exactly what they want—sometimes
+            Problem: 
+            <p>Spotify often gives users exactly what they want—sometimes
             to a fault. The current algorithm primarily focuses on replaying
             music users already know and like, rather than introducing them to
             new music from genres they enjoy but don’t explore often. This
             prevents users from discovering fresh tracks within their broader
             tastes. In interviews, users expressed dissatisfaction with
-            Spotify's recommendations.
-          </p>
-          <figure>
-            <img src="img/banner.png" alt="" />
-          </figure>
-          <p>
-            While they appreciate the way the algorithm curates content that
-            maintains a certain vibe, they desire more variety beyond their
-            usual preferences. Outcome: One of the key design suggestions is the
-            introduction of a “Manage Algorithm” setting. This feature would
-            allow users to customize the scope of recommendations Spotify
-            provides, giving them more control over their listening experience.
-          </p>
-          <figure>
-            <img src="img/banner.png" alt="" />
-          </figure>
-          <p>
-            The goal is to offer users the ability to adjust the algorithm’s
-            reach, letting them explore music from genres they like but may not
-            actively seek out. Primary Feature: The “Manage Algorithm” setting
-            would work with three parameters: Newness, Variety, and Proximity.
-            (These labels should be user-tested to ensure they are clear and
-            intuitive.) Discover: Interviews Conducted: Three Spotify users were
-            interviewed. Key Assumptions: * Users want to store their favorite
-            artists in one place while discovering new music based on their
-            tastes. * The current algorithm limits users, preventing them from
-            stepping outside their usual music bubble. User Pain Points: * A
-            common frustration is the algorithm’s tendency to recycle songs or
-            deliver unsatisfactory recommendations.
-          </p>
-          <figure>
-            <img src="img/banner.png" alt="" />
-          </figure>
-          <p>
-            * Many disliked the changes to how songs are added to the "Liked
-            Songs" playlist, feeling it added unnecessary steps. * One
-            interviewee voiced strong disapproval of Spotify's pre-curated
+            Spotify's recommendations. While they appreciate the way the
+            algorithm curates content that maintains a certain vibe, they desire
+            more variety beyond their usual preferences.</p> 
+            
+            Outcome: 
+            
+            One of the key design suggestions is the introduction of a “Manage Algorithm”
+            setting. This feature would allow users to customize the scope of
+            recommendations Spotify provides, giving them more control over
+            their listening experience. The goal is to offer users the ability
+            to adjust the algorithm’s reach, letting them explore music from
+            genres they like but may not actively seek out.
+            
+            Primary Feature: 
+            
+            The “Manage Algorithm” setting would work with three parameters:
+            Newness, Variety, and Proximity. (These labels should be user-tested
+            to ensure they are clear and intuitive.) 
+            
+           Interviews Conducted: 
+            
+          Three Spotify users were interviewed. 
+            
+            Key Assumptions:
+
+            1. Users want to store their favorite artists in one place while
+            discovering new music based on their tastes. 
+            2. The current algorithm
+            limits users, preventing them from stepping outside their usual
+            music bubble. 
+            
+            User Pain Points: 
+            
+            A common frustration is the
+            algorithm’s tendency to recycle songs or deliver unsatisfactory
+            recommendations. Many disliked the changes to how songs are added
+            to the "Liked Songs" playlist, feeling it adds unnecessary steps.
+            One interviewee voiced strong disapproval of Spotify's pre-curated
             playlists, which often duplicate existing music, preferring
-            user-generated playlists instead. Engagement: * Features like
+            user-generated playlists instead. 
+            
+            Engagement: 
+            Features like
             Spotify Wrapped and other engagement tools were viewed positively,
-            enhancing the overall user experience. * Interviewees expressed a
+            enhancing the overall user experience. Interviewees expressed a
             desire for more human input in music recommendations, favoring
             personal curation, like playlists from friends, over algorithmic
-            suggestions. New Music vs. Variety: * The algorithm tends to
+            suggestions. 
+            
+            New Music vs. Variety:
+            The algorithm tends to
             prioritize new music within the user’s current tastes, rather than
             offering diverse recommendations based on their past listening. *
             Users feel they aren't being introduced to truly new music, even
@@ -105,37 +352,35 @@
             music. As a brief experiment, interviewees were asked to choose a
             random playlist that they had created, then press play with smart
             shuffle enabled. Interviewees were then asked to consider the first
-            11 songs added by smart shuffle.
-          </p>
-          <p>
-            How many unique artists are there? How many of the artists do you
-            know? Of the 11 added songs, how many do you know? This was the
-            results from this test: Interviewee 1: Interviewee 2: 11 songs made
-            by 5 artists. 11 songs made by 6 artists. They knew 8 of 11 songs.
-            They knew 6 of 11 songs. They knew 4 of 5 artists.  They knew 6 of 6
-            artists.  Interviewee 3: 11 songs made by 9 artists. They knew 8 of
-            11 songs. They knew 6 of 9 artists. Problem: Spotify’s
-            recommendations seem to fall between two primary parameters:
-            relevance (vibe, genre, artist) and familiarity. All interviewees
-            have different music habits, but they are recommended music that is
-            mostly familiar, at similar rates. This means that Spotify tends to
-            emphasize music users already know, recommending less entirely “new”
-            or “different” music. While this isn't inherently bad, as users may
-            prefer the comfort of familiar music, it creates a potential issue:
-            the algorithm often traps users in a feedback loop. They may not
-            even realize they’re stuck or know how to break free and discover
-            fresh, exciting music. New Assumption: Because Spotify effectively
-            delivers music users like, many users are less inclined to actively
-            search for new music. Instead, they rely on the platform’s
-            recommendations, which reinforces the feedback loop and keeps them
-            within their musical ecosystem. Design Solution: Manage Algorithm
-            Design Statement: Enhance Spotify's music discovery features by
-            addressing frustrations with the algorithm's narrow focus. Improve
-            the balance between personalized recommendations and exposure to
-            new, diverse music. This can be achieved by refining Spotify’s
-            algorithms, adjusting features, and promoting more community-driven
-            content, ultimately improving user satisfaction. Design Principles
-            and Recommendations: * Encourage Discovery: Offer more variety in
+            11 songs added by smart shuffle. How many unique artists are there?
+            How many of the artists do you know? Of the 11 added songs, how many
+            do you know? This was the results from this test: Interviewee 1:
+            Interviewee 2: 11 songs made by 5 artists. 11 songs made by 6
+            artists. They knew 8 of 11 songs. They knew 6 of 11 songs. They knew
+            4 of 5 artists.  They knew 6 of 6 artists.  Interviewee 3: 11 songs
+            made by 9 artists. They knew 8 of 11 songs. They knew 6 of 9
+            artists. Problem: Spotify’s recommendations seem to fall between two
+            primary parameters: relevance (vibe, genre, artist) and familiarity.
+            All interviewees have different music habits, but they are
+            recommended music that is mostly familiar, at similar rates. This
+            means that Spotify tends to emphasize music users already know,
+            recommending less entirely “new” or “different” music. While this
+            isn't inherently bad, as users may prefer the comfort of familiar
+            music, it creates a potential issue: the algorithm often traps users
+            in a feedback loop. They may not even realize they’re stuck or know
+            how to break free and discover fresh, exciting music. New
+            Assumption: Because Spotify effectively delivers music users like,
+            many users are less inclined to actively search for new music.
+            Instead, they rely on the platform’s recommendations, which
+            reinforces the feedback loop and keeps them within their musical
+            ecosystem. Design Solution: Manage Algorithm Design Statement:
+            Enhance Spotify's music discovery features by addressing
+            frustrations with the algorithm's narrow focus. Improve the balance
+            between personalized recommendations and exposure to new, diverse
+            music. This can be achieved by refining Spotify’s algorithms,
+            adjusting features, and promoting more community-driven content,
+            ultimately improving user satisfaction. Design Principles and
+            Recommendations: * Encourage Discovery: Offer more variety in
             recommendations. One of the best feelings when discovering new music
             is thinking, "I never thought I’d like this," which stems from
             novelty. The algorithm should strive to provide this type of
@@ -168,7 +413,7 @@
             discovery experience and break free from repetitive recommendations.
           </p>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <footer></footer>
