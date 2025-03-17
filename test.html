@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this areas is intruction for broswer and not the user-->
+    <meta charset="utf-8" />
+    <title>simon hauck's portfolio</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="portfolio-header">
+      <div class="highlight1">
+        <a href="index.html"> <h1>simon hauck</h1></a>
+      </div>
+      <div class="inventory-bucket">
+        <div class="inventory">
+          <a href="#sage"> <h5>Sage Advice</h5></a>
+          <a href="#spotify"><h5>Spotify</h5></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-content-wrapper">
+      <div class="main-content">
+        <button class="accordion">Sage Advice</button>
+        <div class="panel">
+          <h3>Coming soon</h3>
+        </div>
+        <button class="accordion">Spotify</button>
+        <div class="panel">
+          <div class="sub-hero">
+            <div class="littlehero">
+              <img
+                src="img/spotifylogo.png"
+                alt="spotify logo"
+                class="image0"
+              />
+            </div>
+            <div class="centerholder">
+              <div class="center1">
+                <img
+                  src="img/spotifyhands.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image1"
+                />
+              </div>
+            </div>
+
+            <a href="downloads/spotify.pdf" download class="download"
+              ><h2>> Download complete deck here.</h2></a
+            >
+
+            <h3>Problem</h3>
+
+            <div class="card">
+              <p>
+                Spotify gives users exactly what they want... almost to a fault.
+                Spotify's algorithms focus on recommending music that users
+                already know and like, rather than introducing them to new and
+                exciting tracks. The platform also tends to overlook genres that
+                users enjoy but don't often explore, limiting their ability to
+                discover fresh tracks within their broader taste. In interviews,
+                users expressed dissatisfaction with Spotify’s recommendations.
+                While they appreciate how Spotify curates music to maintain a
+                consistent vibe, many voiced a desire for more variety beyond
+                their usual preferences.
+              </p>
+            </div>
+            <h3>Key Assumptions</h3>
+            <div class="card">
+              <p>
+                1. Users want to store their favorite artists in one place while
+                discovering new music based on their tastes.
+              </p>
+              <p>
+                2. The current algorithm limits users, preventing them from
+                stepping outside their usual music bubble.
+              </p>
+            </div>
+
+            <h3>Outcome</h3>
+            <div class="card">
+              <p>
+                One of the key design suggestions which I recommend is the
+                introduction of a “Manage Algorithm” setting. This feature would
+                allow users to customize their scope of recommendations which
+                Spotify provides, giving users more control over their listening
+                experience. The goal is to offer users the ability to adjust the
+                algorithm’s reach, allowing users to explore music from genres
+                they like but may not actively seek out, and beyond.
+              </p>
+            </div>
+            <div class="centerholder">
+              <div class="center">
+                <img
+                  src="img/spotify9.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image0"
+                />
+
+                <img
+                  src="img/spotify7.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image0"
+                />
+                <img
+                  src="img/spotify8.png"
+                  alt="the same spotify interface but activated"
+                  class="image0"
+                />
+              </div>
+            </div>
+
+            <h3>Interviews Conducted</h3>
+            <div class="card">
+              <p>Three Spotify users were interviewed.</p>
+            </div>
+            <h3>User Pain Points</h3>
+            <div class="card">
+              <p>
+                A common frustration voiced by users was that the algorithm has
+                a tendency to recycle songs or deliver unsatisfactory
+                recommendations. Many disliked the changes to how songs are
+                added to the "Liked Songs" playlist, feeling it adds unnecessary
+                steps. One interviewee voiced strong disapproval of Spotify's
+                pre-curated playlists, which often they found duplicates their
+                current favourite songs instead of introducing new music.
+                Because of this, users opt to listen to user-generated playlists
+                instead.
+              </p>
+            </div>
+            <h3>Engagement</h3>
+            <div class="card">
+              <p>
+                Features like Spotify Wrapped and other engagement tools were
+                viewed positively, enhancing the overall user experience.
+                Interviewees expressed a desire for more human input in music
+                recommendations, favoring personal curation, like playlists from
+                friends, over algorithmic suggestions.
+              </p>
+            </div>
+
+            <h3>New Music vs. Variety</h3>
+            <div class="card">
+              <p>
+                The algorithm tends to prioritize new music within the user’s
+                current tastes, rather than offering diverse recommendations
+                based on their past listening.
+              </p>
+
+              <p>
+                Users feel they aren't being introduced to truly new music, even
+                though the suggestions align with their preferences. There is
+                also a desire for variety across genres, not just new tracks
+                within a specific genre. While some users appreciate
+                personalized playlists like the Daily Mix or Discover Weekly,
+                others reject them entirely.
+              </p>
+
+              <p>
+                Most users find algorithms useful for discovering new music,
+                though success rates vary, and many prefer to discover music
+                outside the platform, such as in social settings or through
+                friends.
+              </p>
+            </div>
+            <div class="centerholder">
+              <div class="center">
+                <img
+                  src="img/smartshuffle.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image1"
+                />
+              </div>
+            </div>
+            <h3>Smart Shuffle</h3>
+            <div class="card">
+              <p>
+                Smart Shuffle is a microcosm for how Spotify recommends music.
+                As a brief experiment, interviewees were asked to choose a
+                random playlist that they had created, then press play with
+                smart shuffle enabled. Interviewees were then asked to consider
+                the first 11 songs added by smart shuffle.
+              </p>
+
+              <h2>How many unique artists are there?</h2>
+              <h2>How many of the artists do you know?</h2>
+              <h2>Of the 11 added songs, how many do you know?</h2>
+            </div>
+            <div class="centerholder">
+              <div class="center">
+                <img
+                  src="img/spotify6.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image1"
+                />
+              </div>
+            </div>
+            <h3>This was the results from this test:</h3>
+            <div class="list">
+              <div class="container">
+                <h2>Interviewee 1</h2>
+                <ul>
+                  <li>11 songs made by 5 artists.</li>
+                  <li>They knew 8 of 11 songs.</li>
+                  <li>They knew 4 of 5 artists. </li>
+                </ul>
+              </div>
+              <div class="container">
+                <h2>Interviewee 2</h2>
+                <ul>
+                  <li>11 songs made by 6 artists.</li>
+                  <li>They knew 6 of 11 songs.</li>
+                  <li>They knew 6 of 6 artists. </li>
+                </ul>
+              </div>
+              <div class="container">
+                <h2>Interviewee 3</h2>
+                <ul>
+                  <li>11 songs made by 9 artists.</li>
+                  <li>They knew 8 of 11 songs.</li>
+                  <li>hey knew 6 of 9 artists.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Problem</h3>
+            <div class="card">
+              <p>
+                Spotify’s recommendations seem to fall between two primary
+                parameters: relevance to vibe, genre, artist and familiarity to
+                user. All interviewees have different music habits, but are all
+                recommended music that is mostly familiar, at similar rates.
+                This means that Spotify tends to emphasize music users already
+                know, recommending less entirely “new” or “different” music.
+                While this isn't inherently bad, as users may prefer the comfort
+                of familiar music, but there is a potential issue: the algorithm
+                may trap users in a feedback loop. They may not even realize
+                they’re stuck or know how to break free and discover fresh,
+                exciting music.
+              </p>
+            </div>
+            <h3>New Assumption</h3>
+            <div class="card">
+              <p>
+                Because Spotify effectively delivers music that users like, many
+                users are less inclined to actively search for new music.
+                Instead, they rely on the platform’s recommendations, which
+                reinforces the feedback loop and keeps users within their
+                musical ecosystem.
+              </p>
+            </div>
+            <h3>Design Principles and Recommendations</h3>
+            <div class="card">
+              <p>
+                Encourage Discovery: Offer more variety in recommendations. One
+                of the best feelings when discovering new music is thinking, "I
+                never thought I’d like this," which stems from novelty. The
+                algorithm should strive to provide this type of experience.
+              </p>
+              <p>(full list available in slide deck)</p>
+            </div>
+            <h3>Design Solution</h3>
+            <div class="card">
+              <p>
+                The “Manage Algorithm” setting would work with three parameters:
+                Newness, Variety, and Proximity. (These labels should be
+                user-tested to ensure they are clear and intuitive.)
+              </p>
+              <p>
+                Manage Algorithm Design Statement Enhance Spotify's music
+                discovery features by addressing frustrations with the
+                algorithm's narrow focus. Improve the balance between
+                personalized recommendations and exposure to new, diverse music.
+                This can be achieved by refining Spotify’s algorithms, adjusting
+                features, and promoting more community-driven content,
+                ultimately improving user satisfaction.
+              </p>
+            </div>
+            <div class="centerholder">
+              <div class="center">
+                <img
+                  src="img/spotify3.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image0"
+                />
+
+                <img
+                  src="img/spotify4.png"
+                  alt="spotify interface for manage algorithm, greyed out"
+                  class="image0"
+                />
+                <img
+                  src="img/spotify5.png"
+                  alt="the same spotify interface but activated"
+                  class="image0"
+                />
+              </div>
+            </div>
+
+            <h3>Manage Algorithm Setting</h3>
+            <div class="card">
+              <p>
+                Develop a new setting that allows users to customize the scope
+                of their recommendations, enabling users to tailor their music
+                feed to suit their preferences. The "Manage Algorithm" setting
+                should align with the rest of Spotify’s settings, keeping the
+                interface simple and intuitive. Given the concept's complexity,
+                the design must be easy for users to understand and use. A
+                visualizer will be essential to provide immediate feedback
+                beyond just percentages. I propose a pill-shaped interface with
+                three components: two orbs (green and purple) and an outline.
+              </p>
+            </div>
+
+            <img
+              src="img/spotifyhands2.png"
+              alt="spotify interface for manage algorithm, greyed out"
+              class="image1"
+            />
+
+            <h3>1. Green (Newness)</h3>
+            <div class="card">
+              <p>
+                This controls how much new music a listener will hear. It
+                adjusts the percentage of new songs versus familiar ones,
+                particularly in situations like radio play or smart shuffle. The
+                more users increases "newness," the more unfamiliar music users
+                will hear within their chosen vibe.
+              </p>
+            </div>
+            <h3>2. Purple (Variety)</h3>
+            <div class="card">
+              <p>
+                This controls the variety of music a listener will hear.
+                Spotify's current algorithm tends to restrict recommendations to
+                genres that fit the user’s taste profile, leaving out genres
+                they may also enjoy. The variety parameter would allow users to
+                expand (or narrow) their musical diet by adding or subtracting
+                genres.
+              </p>
+            </div>
+
+            <h3>3. Outline (Proximity)</h3>
+            <div class="card">
+              <p>
+                This parameter controls how close the recommendations stay to a
+                user’s taste profile. Think of it as casting a net, but with
+                adjustable size. The Proximity setting determines how far the
+                algorithm will reach into different musical territories to
+                provide suggestions, allowing users to explore music outside
+                their usual preferences.
+              </p>
+            </div>
+
+            <h3>Wrap it up</h3>
+            <div class="card">
+              <p>
+                By integrating these three components, the “Manage Algorithm”
+                feature empowers users to take control of their music discovery
+                experience and break free from repetitive and restricting
+                recommendations.
+              </p>
+
+              <p>
+                It is fully within my knowledge that Spotify would never do
+                this... but a feature such as this would be a first of its kind
+                and would result in a content experience like no other.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </main>
+
+    <footer>
+      <a
+        href="https://www.figma.com/design/FPy69aqLadsD2eLuLNxrSS/portfolio-website?node-id=0-1&t=Pydo0MxaWI6NrYJ2-1"
+        ><h6>Style Guide</h6></a
+      >
+      <a href="cite.html"> <h6>Citations</h6></a>
+      <a href="https://github.com/s-hauck/s-hauck.github.io"
+        ><h6>git hub</h6>
+      </a>
+    </footer>
+  </body>
+</html>

@@ -249,6 +249,11 @@ header {
   width: 70%;
   height: auto;
 }
+.image2 {
+  width: 70%;
+  height: auto;
+  margin-top: 3rem;
+}
 .centerholder {
   border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
@@ -427,42 +432,6 @@ header {
 }
 
 /*  */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-/* main {
-  background-color: #e8e7e3;
-  display: flex;
-
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 100%;
-} */
-
-/*  */
 footer {
   width: 100%;
   padding: 10rem;
@@ -478,13 +447,7 @@ footer {
   .navigation {
     flex-direction: row;
   }
-  body {
-    /* background: rgb(109, 109, 234); */
-    /* background: #e8e7e3;
-    background-image: url(../img/background.jpg); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-  }
+
   .main-content {
     display: flex;
     flex-direction: column;
@@ -498,22 +461,7 @@ footer {
     margin-left: 10rem;
     width: 70%;
   }
-  /* .inventory {
-    background-color: #e8e7e3;
-    border-color: #ffffff;
-    border-radius: 0.2rem;
-    padding: 2rem;
-    position: fixed;
-    border-style: solid;
-    border-width: 1px;
-    display: flex;
-    flex-direction: column;
-  }
-  .inventory-bucket {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  } */
+
   /* blocks */
 
   .bucket {
@@ -561,11 +509,6 @@ footer {
     border-bottom-left-radius: 100rem;
     border-bottom-right-radius: 100rem;
     padding: 5.5rem;
-    /* border-style: solid;
-  border-color: #3f5c62;
-  border-width: 0.1rem; */
-    /* background-repeat: no-repeat;
-  background-size: 100% 100%; */
   }
   .block4 {
     background-color: #ffd040;
@@ -580,12 +523,6 @@ footer {
     width: 100%;
   }
 
-  /* .main-content-wrapper1 {
-    width: 100%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-  } */
   header {
     background-color: rgba(147, 133, 90, 0);
     position: fixed;
@@ -599,8 +536,6 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-
-    /* margin: 2rem; */
     padding: 2rem;
     border-radius: 0.2rem;
     border-color: #ffffff;
@@ -651,26 +586,9 @@ footer {
     background-color: #3f5c62;
   }
 }
-/* 
-@media (max-width: 480px) {
-  .main-content-wrapper1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-} */
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* body {
-    background: green;
-    background: #e8e7e3;
-    background: center;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
   .portfolio-header {
     position: fixed;
 
@@ -724,13 +642,6 @@ footer {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  body {
-    /* background: #e8e7e3; */
-    /* background: #e8e7e3;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-  }
   .main-content {
     display: flex;
     flex-direction: column;
@@ -753,10 +664,58 @@ footer {
   }
   .card {
     background-color: #f0f0ed;
-    /* padding: 2rem; */
+
     border-radius: 0.4rem;
-    /* margin: 2rem; */
+
     padding-bottom: 1rem;
     box-shadow: 1px 1px 10px 1px rgba(155, 146, 122, 0.1);
   }
+}
+
+/* test section */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
