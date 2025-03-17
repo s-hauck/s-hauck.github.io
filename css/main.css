@@ -690,7 +690,7 @@ footer {
     align-content: center;
 
     /* margin: 2rem; */
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 0.2rem;
     border-color: #ffffff;
     border-radius: 0.2rem;
@@ -718,7 +718,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 3rem;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 0.2rem;
     border-color: #ffffff;
     border-radius: 0.2rem;
