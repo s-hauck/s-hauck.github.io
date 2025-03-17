@@ -42,30 +42,40 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 h4 {
+  font-size: 2rem;
   font-weight: 600;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h5 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-h6 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+}
+h6 {
+}
+
+p {
 }
 
 a {
   color: #3f5c62;
   text-decoration: none;
   font-family: "Anuphan", sans-serif;
+}
+
+.download:hover {
+  text-decoration: underline;
+}
+
+.download:active {
+  color: white;
 }
 
 li {
@@ -195,16 +205,29 @@ header {
 }
 
 /* blocks */
-
-.center {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.card {
+  background-color: #f0f0ed;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  margin: 2rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 10px 1px rgba(155, 146, 122, 0.1);
 }
-
-img.center {
-  width: 50%;
+.image0 {
+  width: 25%;
+  height: auto;
+  margin: 0.5rem;
+}
+.centerholder {
+  border-radius: 0.4rem;
+  background-color: #969696;
+  box-shadow: 1px 1px 10px 1px rgba(155, 146, 122, 0.1);
+}
+.center {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .bucket {
@@ -299,7 +322,6 @@ img.center {
 }
 .section-title {
   margin-top: 10rem;
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -364,6 +386,7 @@ img.center {
   margin-bottom: 3rem;
 }
 
+/*  */
 .accordion {
   background-color: #eee;
   color: #444;
@@ -575,7 +598,7 @@ footer {
   .inventory {
     background-color: #e8e7e3;
     border-color: #ffffff;
-    border-radius: 0.2rem;
+    border-radius: 0.4rem;
     padding: 2rem;
     position: fixed;
     border-style: solid;
